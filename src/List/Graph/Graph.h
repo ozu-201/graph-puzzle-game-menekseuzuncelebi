@@ -1,9 +1,10 @@
 //
-// Created by mu028519 on 12/14/2023.
+// Created by Olcay Taner YILDIZ on 8.05.2023.
 //
 
-#ifndef GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_GRAPH_H
-#define GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_GRAPH_H
+#ifndef DATASTRUCTURES_CPP_GRAPH_H
+#define DATASTRUCTURES_CPP_GRAPH_H
+
 
 #include "EdgeList.h"
 #include "../../General/AbstractGraph.h"
@@ -16,8 +17,7 @@ namespace list {
     public:
         explicit Graph(int vertexCount);
         ~Graph();
-        void addEdge(int from, int to);
-        void addEdge(int from, int to, int weight);
+        void addEdge(std::string from, std::string to);
         void connectedComponentsDisjointSet();
         Path* bellmanFord(int source);
         Path* dijkstra(int source);
@@ -29,4 +29,4 @@ namespace list {
     };
 
 }
-#endif //GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_GRAPH_H
+#endif //DATASTRUCTURES_CPP_GRAPH_H

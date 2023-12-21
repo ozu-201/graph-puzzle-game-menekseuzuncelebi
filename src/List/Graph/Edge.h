@@ -1,16 +1,14 @@
 //
-// Created by mu028519 on 12/14/2023.
+// Created by Olcay Taner YILDIZ on 8.05.2023.
 //
 
-#ifndef GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_EDGE_H
-#define GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_EDGE_H
-
-
+#ifndef DATASTRUCTURES_CPP_EDGE_H
+#define DATASTRUCTURES_CPP_EDGE_H
+#include <string>
 class Edge {
-
 private:
-    int from;
-    int to;
+    std::string from;
+    std::string to;
     int weight;
     Edge* next;
 public:
@@ -21,8 +19,7 @@ public:
     int getFrom() const;
     int getTo() const;
     int getWeight() const;
-
 };
 
 
-#endif //GRAPH_PUZZLE_GAME_MENEKSEUZUNCELEBI_EDGE_H
+#endif //DATASTRUCTURES_CPP_EDGE_H

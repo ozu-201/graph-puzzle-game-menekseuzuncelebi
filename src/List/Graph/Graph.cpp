@@ -1,8 +1,11 @@
 //
-// Created by mu028519 on 12/14/2023.
+// Created by Olcay Taner YILDIZ on 8.05.2023.
 //
 
 #include "Graph.h"
+#include "../../Array/DisjointSet.h"
+#include "../Queue.h"
+#include "../../Array/Heap/MinHeap.h"
 
 namespace list {
 
@@ -13,15 +16,12 @@ namespace list {
         }
     }
 
-    void Graph::addEdge(int from, int to) {
+    void Graph::addEdge(string from, string to) {
         Edge* edge = new Edge(from, to, 1);
         edges[from].insert(edge);
     }
 
-    void Graph::addEdge(int from, int to, int weight) {
-        Edge* edge = new Edge(from, to, weight);
-        edges[from].insert(edge);
-    }
+
 
     Graph::~Graph() {
         delete[] edges;

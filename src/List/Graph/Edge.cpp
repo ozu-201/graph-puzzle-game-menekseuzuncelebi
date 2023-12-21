@@ -1,10 +1,10 @@
 //
-// Created by mu028519 on 12/14/2023.
+// Created by Olcay Taner YILDIZ on 8.05.2023.
 //
 
 #include "Edge.h"
 
-Edge::Edge(int from, int to, int weight) {
+Edge::Edge(std::string from, std::string to, int weight) {
     this->from = from;
     this->to = to;
     this->weight = weight;
@@ -34,4 +34,3 @@ int Edge::getWeight() const{
 Edge::Edge() {
 
 }
-
