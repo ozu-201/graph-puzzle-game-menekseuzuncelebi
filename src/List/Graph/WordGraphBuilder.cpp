@@ -6,7 +6,7 @@
 
 
 static list::Graph* buildWordGraph(const std::string& "turkish.dictionary.txt") {
-list::Graph* wordGraph = new list::Graph(30);
+list::Graph* wordGraph = new list::Graph(1000);
 
 std::ifstream file("turkish.dictionary.txt");
 if(!file.is_open()) {

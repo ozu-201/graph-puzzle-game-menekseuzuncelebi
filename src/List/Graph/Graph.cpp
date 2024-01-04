@@ -57,7 +57,10 @@ namespace list {
         }
     }
 
-    void Graph::breadthFirstSearch(bool *visited, int startNode) {
+    void Graph::breadthFirstSearch(std::vector<std::string> filteredWords, std::string startWord, std::string endWord){
+
+        std::vector<bool> visited(filteredWords.size(),false);
+       std::vector<int> parent(filteredWords.size(), -i);
         Edge* edge;
         int fromNode, toNode;
         Queue queue = Queue();
